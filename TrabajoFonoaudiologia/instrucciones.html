@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONOKIDS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="fondoGeneral">
+        <div class="diapositivaGeneral">
+            <img src="imagenes\Instrucciones\camion.png" style="width: 23vw; height: 13vw; position: fixed; top: 87%; left: 85%; transform: translate(-50%, -50%) rotate(0deg);" alt="Camion de Juguete">           
+            <img src="imagenes\Instrucciones\cohete.png" style="width: 13vw; height: 23vw; position: fixed; top: 80%; left: 2%; transform: translate(-50%, -50%) rotate(0deg);" alt="Cohete">  
+            <img src="imagenes\Instrucciones\estrellas.webp" style="width: 22vw; height: 15vw; position: fixed; top: 8%; left: 6%; transform: translate(-50%, -50%) rotate(0deg);" alt="Estrellas Colgante">  
+            <div class="" >
+                <a id="myButton" style="display: none"; class="botonContinuemos" href="comenzarJuego.html">Continuemos</a>
+            </div>
+            <div>
+                <h1 class="tituloInstrucciones">
+                    INSTRUCCIONES
+                </h1>
+            </div>
+            <div>
+                <h2 class="Instrucciones">
+                    A TRAVES DE DISNTITAS IMAGENES SE IRAN TRABAJANDO LOS DISTINTOS COMPONENTES DEL LENGUAJE, APLICANDO DIFERENTES ACCIONES COMO ARRASTRAR, CLICKEAR, DECIR EN VOS ALTA QUE VA A PERMTIIR ABORDAR COMPONENTES COMO LA PRAGMATICA, LA FONOLOGIA, LA MORFOSINTAXIS Y LA SEMANTICA
+                </h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Obtener referencia al botón
+        var myButton = document.getElementById("myButton");
+
+        // Esperar 5 segundos (5000 milisegundos)
+        setTimeout(function() {
+        // Mostrar el botón cambiando su estilo
+        myButton.style.display = "block";
+        }, 3000);
+    </script>
+</body>
+</html>

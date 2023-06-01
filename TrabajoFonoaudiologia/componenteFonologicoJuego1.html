@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONOKIDS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="fondoJuego1">
+        <div>
+            <h1 class="tituloPrincipalJuego1">
+                <b>Componente Fonologico</b>
+            </h1>
+        </div>
+        <div class="diapositivaJuego1">
+            <a type ="button" class="botonFelicitaciones" href="felicitacion.html">✔</a>
+            <a type="button" class="botonVolverIntentar" href="volverIntentar.html">✖</a>
+            <a id="enlaceSilaba1" type="button" class="botonPrimeraSilaba">Primera Silaba</a>
+            <a id="enlaceSilaba2" type="button" class="botonSegundaSilaba">Segunda Silaba</a>
+            <a id="enlaceSilaba3" type="button" class="botonTerceraSilaba">Tercera Silaba</a>
+
+            <img src="imagenes/componenteFonologicoJuego1/pelotaFutbol.webp" style="width: 20vw; height: 20vw; position: fixed; top: 32%; left: 52%; transform: translate(-50%, -50%) rotate(0deg);" alt="Pelota Futbol">
+            </div>
+            <div >
+                <h2 class="silaba1" style= "color: rgb(42, 248, 0);">PE</h2>
+                <h2 class="silaba2" style= "color: rgb(42, 248, 0);">LO</h2>
+                <h2 class="silaba3" style= "color: rgb(42, 248, 0);">TA</h2>
+                <h2 class="divisoria1" style= "color: rgba(193, 89, 75, 0.545);">-</h2>
+                <h2 class="divisoria2" style= "color: rgba(193, 89, 75, 0.545);">-</h2>
+                <h2 class="barraAbajo1" style= "color: yellow;">-</h2>
+                <h2 class="barraAbajo2" style= "color: yellow;">-</h2>
+                <h2 class="barraAbajo3" style= "color: yellow;">-</h2>
+            </div>
+    </div>
+    <script>
+        // Obtener referencias a los elementos de enlace
+        var enlaceSilaba1 = document.getElementById("enlaceSilaba1");
+        var enlaceSilaba2 = document.getElementById("enlaceSilaba2");
+        var enlaceSilaba3 = document.getElementById("enlaceSilaba3");
+      
+        // Obtener referencias a los elementos de sílabas
+        var silaba1 = document.querySelector(".silaba1");
+        var silaba2 = document.querySelector(".silaba2");
+        var silaba3 = document.querySelector(".silaba3");
+      
+        // Agregar eventos de clic a los enlaces
+        enlaceSilaba1.addEventListener("click", function() {
+          silaba1.style.display = "block"; // Mostrar sílaba 1
+          enlaceSilaba1.style.display = "none"; // Ocultar botón
+        });
+      
+        enlaceSilaba2.addEventListener("click", function() {
+          silaba2.style.display = "block"; // Mostrar sílaba 2
+          enlaceSilaba2.style.display = "none"; // Ocultar botón
+        });
+
+        enlaceSilaba3.addEventListener("click", function() {
+          silaba3.style.display = "block"; // Mostrar sílaba 2
+          enlaceSilaba3.style.display = "none"; // Ocultar botón
+        });
+      
+        // Puedes agregar más eventos de clic para mostrar otras sílabas si es necesario
+      </script>
+</body>
+</html>
